@@ -1,0 +1,57 @@
+[
+  {
+    "id": "demo_1",
+    "description": "Coffee at Starbucks",
+    "amount": 4.5,
+    "bank": "Bank A",
+    "user_id": "Alice",
+    "is_fraud": 0,
+    "timestamp": 1735315200,
+    "risk_level": "✅ LOW RISK (Verified Pattern)",
+    "index_source": "secure_history"
+  },
+  {
+    "id": "demo_2",
+    "description": "Grocery shopping at Walmart",
+    "amount": 87.32,
+    "bank": "Bank B",
+    "user_id": "Bob",
+    "is_fraud": 0,
+    "timestamp": 1735314000,
+    "risk_level": "✅ LOW RISK (Verified Pattern)",
+    "index_source": "secure_history"
+  },
+  {
+    "id": "demo_threat_1",
+    "description": "Unauthorized card testing",
+    "amount": 1.0,
+    "bank": "Bank C",
+    "user_id": "system",
+    "is_fraud": 1,
+    "timestamp": 1735313000,
+    "risk_level": "🚫 BLOCKED (Known Threat Pattern)",
+    "index_source": "known_threats"
+  },
+  {
+    "id": "demo_3",
+    "description": "Gas station fill-up",
+    "amount": 45.0,
+    "bank": "Bank A",
+    "user_id": "Alice",
+    "is_fraud": 0,
+    "timestamp": 1735312000,
+    "risk_level": "✅ LOW RISK (Verified Pattern)",
+    "index_source": "secure_history"
+  },
+  {
+    "id": "demo_4",
+    "description": "Restaurant dinner",
+    "amount": 67.9,
+    "bank": "Bank B",
+    "user_id": "Bob",
+    "is_fraud": 0,
+    "timestamp": 1735311000,
+    "risk_level": "✅ LOW RISK (Verified Pattern)",
+    "index_source": "secure_history"
+  }
+]
