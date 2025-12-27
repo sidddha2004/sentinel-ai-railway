@@ -8,6 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional, List
 import json
+import os
 import time
 import random
 from pathlib import Path
@@ -17,7 +18,11 @@ app = FastAPI(title="Sentinel AI - Demo Mode")
 # CORS - Allow your frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, replace with your frontend URL
+    allow_origins=[
+        "https://cydbfinanace.vercel.app",  # Production frontend
+        "http://localhost:3000",  # Local development
+        "http://127.0.0.1:3000",  # Local development alternative
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
