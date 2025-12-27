@@ -20,8 +20,10 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "https://cydbfinanace.vercel.app",  # Production frontend
-        "http://localhost:3000",  # Local development
+        "http://localhost:3000",  # Local development (React default)
         "http://127.0.0.1:3000",  # Local development alternative
+        "http://localhost:5173",  # Vite default port
+        "http://127.0.0.1:5173",  # Vite alternative
     ],
     allow_credentials=True,
     allow_methods=["*"],
